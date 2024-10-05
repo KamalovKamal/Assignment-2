@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamal!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+       
+        body {
+            background-color: rgb(0, 31, 63);
+            color: white;
+            font-family: 'Lobster', sans-serif;
+            
+        }
+
+        table, th, td {
+            border: 1px solid rgb(234, 216, 177);
+            color: white;
+        }
+
+        .hobbies-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .hobby {
+            width: 45%;
+        }
+
+        h1, h2, h3 {
+            color: rgb(234, 216, 177);
+            background-color: rgb(106, 154, 176);
+            padding: 10px;
+            font-family:'Open Sans', cursive;
+        }
+
+        a {
+            color: rgb(234, 216, 177);
+        }
+
+        .hobby img {
+            transition: transform 0.3s ease;
+        }
+
+        .hobby img:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            transition: color 0.5s ease-in-out;
+        }
+
+        h1:hover {
+            color: rgb(233, 173, 173);
+        }
+
+        .contact-button, .instagram-button {
+            background-color: rgb(106, 154, 176);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-button:hover, .instagram-button:hover {
+            background-color: rgb(234, 216, 177);
+            color: rgb(0, 31, 63);
+        }
+
+        @media (max-width: 768px) {
+            .hobbies-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .hobby {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1, h2, h3 {
+                font-size: 1.2em;
+                text-align: center;
+            }
+
+            table, th, td {
+                font-size: 0.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Kamalov Kamal!</h1>
+    <h2>Aspiring Product Manager</h2>
+
+    <h3>Bio:</h3>
+    <a href="https://www.instagram.com/kama1_k/" class="instagram-button">my instagram</a>
+    <br>
+    <img src="Kamal.jpg" alt="" width="750" height="936">
+    <br>    
+    <p>My name is Kamal.</p>
+    <p>I am 20 years old, I am in my third year at KBTU. My specialty is IT management. Turkish by nationality. I have been playing sports since childhood.</p>
+    <p>I adhere to the philosophy of setting a goal and achieving it.</p>
+    <p style="color:rgb(146, 146, 5);">Welcome to my first website!</p>
+    <br>
+
+    <h3>Hobbies:</h3>
+    <div class="hobbies-container">
+        <div class="hobby">
+            <img src="plan.jpg" alt="" width="275" height="293">
+            <p>I have loved drawing architecture since childhood. It started when we needed to create a house plan, and I did it myself, which I really enjoyed. Sometimes I sit and just watch designs and different architectural solutions. In this image, you can see my first house drawing ;)</p> 
+        </div>
+        <div class="hobby">
+            <img src="box.png" alt="" width="250" height="250">
+            <p>I have been involved in sports since childhood; sports are an integral part of my life. I love boxing because I used to cheer for Gennady Golovkin as a child, and I enjoy it.</p> 
+        </div>
+    </div>
+    <br>
+
+    <table style="width:100%">
+        <tr>
+            <th>When I was a child</th>
+            <th>Now</th>
+            <th>When I grow up</th>
+        </tr>
+        <tr>
+            <td>I dreamed of flying into space</td>
+            <td>I think it will be real in the future</td>
+            <td>I am shocked by what is happening in space</td>
+        </tr>
+        <tr>
+            <td>I dream of living in another country</td>
+            <td>I live in my own country and the desire to move disappears</td>
+            <td>I moved to Mars and I'm not interested in another country.</td>
+        </tr>
+        <tr>
+            <td>I dreamed of seeing people from other countries</td>
+            <td>After seeing a lot of people, I realized that I live in a good environment</td>
+            <td>Living on Mars, I stopped thinking that people are different</td>
+        </tr>
+    </table>
+    <br>
+
+    <h1><a href="tel:+87007727214" class="contact-button">8(700)-772-72-14</a></h1>
+
+</body>
+</html>
